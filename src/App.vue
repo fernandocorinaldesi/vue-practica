@@ -1,7 +1,3 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -14,13 +10,28 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/ciclo-vida">Ciclo de vida</RouterLink>
         <RouterLink to="/prop">Prop</RouterLink>
         <RouterLink to="/pinia">Pinia</RouterLink>
+        <RouterLink to="/solo-logeados">Solo logeados</RouterLink>
 
       </nav>
     </div>
+    <button @click="login">logearme/deslogearme</button>
+    <div>ESTADO ACTUAL LOGEADO :{{ auth.isLogged }} </div>
   </header>
 
   <RouterView />
 </template>
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import { authStore } from './stores/auth'
+const auth = authStore()
+
+
+function login() {
+  auth.login()
+}
+
+</script>
 
 <style scoped>
 header {
