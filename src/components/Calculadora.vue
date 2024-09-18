@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input v-model="number1" type="number">
-        <input v-model="number2" type="number">
+        <span>numero 1 </span><input v-model="number1" type="number">
+        <span>numero 2 </span><input v-model="number2" type="number">
         <div>resultado: {{calcular}}</div>
     </div>
   </template>

@@ -1,9 +1,11 @@
 <template>
-    <div>
-        <pinia1></pinia1>
-    </div>
-    <div style="margin-top: 2%;">
-        <pinia2></pinia2>
+    <div style="margin-left: 5%;">
+        <div>
+            <pinia1></pinia1>
+        </div>
+        <div style="margin-top: 2%;">
+            <pinia2></pinia2>
+        </div>
     </div>
 </template>
 
@@ -14,6 +16,4 @@ import pinia2 from '../components/PiniaBasic2.vue'
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
