@@ -10,6 +10,7 @@
         <RouterLink to="/ciclo-vida">Ciclo de vida</RouterLink>
         <RouterLink to="/prop">Prop</RouterLink>
         <RouterLink to="/pinia">Pinia</RouterLink>
+        <RouterLink to="/seguridad">Seguridad</RouterLink>
         <RouterLink to="/solo-logeados">Solo logeados</RouterLink>
 
       </nav>
