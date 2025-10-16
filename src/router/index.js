@@ -37,6 +37,11 @@ const router = createRouter({
       component: () => import('../views/PiniaBasicView.vue')
     },
     {
+      path: '/seguridad',
+      name: 'seguridad',
+      component: () => import('../views/Seguridad.vue')
+    },
+    {
       path: '/solo-logeados',
       name: 'solologin',
       meta:{requireAuth:true},
